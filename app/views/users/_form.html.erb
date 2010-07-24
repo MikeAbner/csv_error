@@ -1,0 +1,31 @@
+<%= form_for :user, 
+             :html => {:id => "login-form"}, 
+             :validations => true do |f| %>
+
+  <%= f.label :email %><br/>
+  <%= f.text_field :email %><br/>
+  <%= f.label :password %><br/>
+  <%= f.text_field :password %><br/>
+  <%= f.label :password_confirmation %><br/>
+  <%= f.text_field :password_confirmation %><br/>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= form_for :user, 
+             :html => {:id => "edit-form"}, 
+             :validations => true do |f| %>
+
+  <%= f.label :email %><br/>
+  <%= f.text_field :email %><br/>
+  <%= f.label :password %><br/>
+  <%= f.text_field :password %><br/>
+  <%= f.label :password_confirmation %><br/>
+  <%= f.text_field :password_confirmation %><br/>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

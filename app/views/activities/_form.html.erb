@@ -1,0 +1,27 @@
+<%= form_for :activity, 
+             :html => {:id => "new-activity"},
+             :validations => true do |f| %>
+
+  <%= f.label :what %><br/>
+  <%= f.text_field :what %><br/>
+  <%= f.label :desc %><br/>
+  <%= f.text_field :desc %><br/>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= form_for :activity, 
+             :html => {:id => "edit-activity"},
+             :validations => true do |f| %>
+
+  <%= f.label :what %><br/>
+  <%= f.text_field :what %><br/>
+  <%= f.label :desc %><br/>
+  <%= f.text_field :desc %><br/>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
